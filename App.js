@@ -3,6 +3,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import BookScreen from './screens/BookScreen';
+import BookDetailScreen from './screens/BookDetailScreen';
 
 // function HomeScreen(){
 //   return(
@@ -22,9 +23,10 @@ export default function App() {
     //   <StatusBar style="auto" />
     // </View>
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator initialRouteName='BookS'>
         {/* <Stack.Screen name="Home" component={HomeScreen}/> */}
         <Stack.Screen name="BookS" component={BookScreen}/>
+        <Stack.Screen name="BookDetail" component={BookDetailScreen}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

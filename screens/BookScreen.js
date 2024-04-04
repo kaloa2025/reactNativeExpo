@@ -1,14 +1,16 @@
 //rnfes
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 import BookList from '../components/BookList'
 
-const BookScreen = () => {
+const BookScreen = ({navigation}) => {
   return (
     <View>
-      <Text>
-        <BookList/>
-        </Text>
+      <TouchableOpacity
+        onPress={()=>{navigation.navigate('BookDetail')}}>
+        <Text>GO TO BDS</Text>
+      </TouchableOpacity>
+      {/* <BookList navigation={navigation}/> */}
     </View>
   )
 }
