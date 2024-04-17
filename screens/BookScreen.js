@@ -1,7 +1,6 @@
 //rnfes
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
-import BookList from '../components/BookList'
 
 const BookScreen = ({navigation}) => {
   return (
